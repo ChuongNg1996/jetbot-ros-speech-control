@@ -7,7 +7,7 @@ The project aims to control Jetbot wirelessly to do simple maneuver (i.e. going 
 The project uses: 
 * [ROS Framework](http://wiki.ros.org/) (on Ubuntu) to alleviate concurrency management and module communication.
 * [Jetbot](https://jetbot.org/master/), which is a differential wheeled robot and its ros package [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) for motor control.
-* [SpeechRecognition](https://github.com/Uberi/speech_recognition#readme) module with [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python) library for OFFLINE recognition.
+* [Speech Recognition](https://github.com/Uberi/speech_recognition#readme) module with [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python) library for OFFLINE recognition.
 
 The project is very short and simple. Thus, a reconstruction will be provided instead of an installation guide.
 
@@ -25,8 +25,16 @@ The project is very short and simple. Thus, a reconstruction will be provided in
    cd ..
    catkin_make
    ```
-* If use microphone, install PyAudio. PortAudio might be needed if there is error.
+* If microphone is used, install PyAudio. PortAudio is be needed
    ```sh
    sudo apt-get install portaudio19-dev 
    pip install PyAudio
+   ```
+* Install [Speech Recognition](https://github.com/Uberi/speech_recognition#readme) module and [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python). SWIG is needed.
+   ```sh
+   pip install SpeechRecognition
+   sudo apt update
+   sudo apt install swig
+   python -m pip install --upgrade pip setuptools wheel
+   pip install --upgrade pocketsphinx
    ```
