@@ -16,10 +16,10 @@ The project uses:
    ```sh
    mkdir -p ~/catkin_ws/src
    ```
-* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo and build it. On terminal: 
+* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo (choose the correct path for your ROS) and build it. On terminal: 
    ```sh
    cd ~/catkin_ws/src
-   git clone https://github.com/dusty-nv/jetbot_ros 
+   git clone https://github.com/dusty-nv/jetbot_ros -b melodic
    cd ..
    catkin_make
    ```
@@ -66,5 +66,9 @@ The project uses:
 * Create a new ROS package. On terminal: 
    ```sh
    cd ~/catkin_ws/src
-   catkin_create_pkg speech_command
+   catkin_create_pkg speech_control_1
+   cd speech_command
+   mkdir src
+   cd src
    ```
+* Create the source code for the created ROS package with an arbitrary name (e.g. speech_command.py). Combining the [Publisher-Subscriber in Python tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) with speech_test.py and `/jetbot_motors/cmd_str`, which means we simply need to import and init a ros(py) entity to speech_test.py, open a publisher 
