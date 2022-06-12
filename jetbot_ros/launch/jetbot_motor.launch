@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="jetbot_ros" type="jetbot_motors.py" name="jetbot_motors"/>
+</launch>
