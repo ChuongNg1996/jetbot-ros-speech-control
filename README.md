@@ -2,12 +2,14 @@
 A simple implementation of speech control for Jetbot
 
 ## Project Description
-The project aims to control Jetbot wirelessly to do simple maneuver (i.e. going forward, going backward, rotating left, rotating right) with voice command (e.g. "go" = forward, "back" = backward, "left" = left, "right" = right), can be easily modified for any kind of robot platform. 
+The project aims to control Jetbot to do simple maneuver (i.e. going forward, going backward, rotating left, rotating right) with voice command (e.g. "go" = forward, "back" = backward, "left" = left, "right" = right), can be easily modified for any kind of robot platform. 
 
 The project uses: 
 * [ROS Framework](http://wiki.ros.org/) (on Ubuntu) to alleviate concurrency management and module communication.
 * [Jetbot](https://jetbot.org/master/), which is a differential wheeled robot and its ros package [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) for motor control.
 * [Speech Recognition](https://github.com/Uberi/speech_recognition#readme) module with [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python) library for OFFLINE recognition.
+
+For simplicity, it is assumed that the microphone is directly connected to Jetbot wired or wirelessly. The author, however, used a laptop to process the voice command and send ROS command through WIFI to Jetbot.
 
 ## Installation
 * Install Python.
@@ -143,3 +145,11 @@ The project uses:
 
    ```
 * Add `<depend>std_msgs</depend>` inside `package.xml` 
+* Create the a [ROS launch file](http://wiki.ros.org/roslaunch) inside (new) folder launch of `speech_control_1` package with an arbitrary name (e.g. `speech_command.launch`), can be done by a simple text editor and saved as a `.lanch` file. Init the nodes inside the launch file:
+   ```sh
+   <?xml version="1.0"?>
+   <launch>
+      <node pkg="speech_control_1" type="speech_command.py" respawn="false" name="speech_command" output="screen"/>
+   </launch>
+   ```
+
