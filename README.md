@@ -167,11 +167,11 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
 * Before running the ROS launch files, follow [Network Configuration](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#network-configuration) for Turtlebot3 for WIFI connection between both devices.
 
 ## API
-To be update
+To be updated
 
 ## Debugging 
 * Use `rostopic list` to see available ROS topics.
 * Use `rostopic echo /jetbot_motors/cmd_str` to see if the messages are read.
 
 ## Other
-* To make the commands run on startup, for Ubuntu user, beside systemd, can open and append terminator -e "bash -i -c 'sleep 3 && roslaunch jetbot_ros jetbot_motor.launch' "
+* To make the commands run on startup, Ubuntu users can use `Startup Application` (beside `systemd`). Open `Startup Application` -> Add -> Name: `ROS Launch` (or anything) and Command: `terminator -e "bash -i -c 'sleep 3 && roslaunch jetbot_ros jetbot_motor.launch' "` -> Add -> Close.
