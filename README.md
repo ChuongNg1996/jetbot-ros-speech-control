@@ -12,18 +12,18 @@ The project uses:
 ## Installation
 * Install Python.
 * [Install ROS](http://wiki.ros.org/melodic/Installation/Ubuntu) (any version).
-* At /usr/home/"name" ("name" is arbitrary), create a ROS workspace.
+* At /usr/home/"name" ("name" is arbitrary), create a ROS workspace. On terminal: 
    ```sh
    mkdir -p ~/catkin_ws/src
    ```
-* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo and build it.
+* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo and build it. On terminal: 
    ```sh
    cd ~/catkin_ws/src
    git clone https://github.com/dusty-nv/jetbot_ros 
    cd ..
    catkin_make
    ```
-* If microphone is used, install PyAudio. PortAudio is be needed
+* If microphone is used, install PyAudio. PortAudio is be needed. On terminal: 
    ```sh
    sudo apt-get install portaudio19-dev 
    pip install PyAudio
@@ -57,4 +57,8 @@ The project uses:
 
    for phrase in speech:
        print(phrase)
+   ```
+* Save and test speech_test.py. On terminal: 
+   ```sh
+   python speech_test.py
    ```
