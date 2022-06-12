@@ -16,5 +16,6 @@ The project is very short and simple. Thus, a reconstruction will be provided in
 * [Install ROS](http://wiki.ros.org/melodic/Installation/Ubuntu) (any version).
 * At /usr/home/"name" ("name" is arbitrary), create a ROS workspace.
    ```sh
+   mkdir -p ~/catkin_ws/src
    ```
 * 
