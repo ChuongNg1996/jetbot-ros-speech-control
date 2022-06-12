@@ -9,9 +9,7 @@ The project uses:
 * [Jetbot](https://jetbot.org/master/), which is a differential wheeled robot and its ros package [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) for motor control.
 * [Speech Recognition](https://github.com/Uberi/speech_recognition#readme) module with [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python) library for OFFLINE recognition.
 
-The project is very short and simple. Thus, a reconstruction will be provided instead of an installation guide.
-
-## Project Reconstruction
+## Installation
 * Install Python.
 * [Install ROS](http://wiki.ros.org/melodic/Installation/Ubuntu) (any version).
 * At /usr/home/"name" ("name" is arbitrary), create a ROS workspace.
@@ -38,3 +36,4 @@ The project is very short and simple. Thus, a reconstruction will be provided in
    python -m pip install --upgrade pip setuptools wheel
    pip install --upgrade pocketsphinx
    ```
+## Project Reconstruction
