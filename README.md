@@ -37,7 +37,7 @@ The project uses:
    pip install --upgrade pocketsphinx
    ```
 ## Project Reconstruction
-* Create a Python file with an arbitrary name (e.g. speech_test.py), copy & paste the first example of [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python).
+* Create a Python file with an arbitrary name (e.g. `speech_test.py`), copy & paste the first example of [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python).
    ```sh
    import os
    from pocketsphinx import LiveSpeech, get_model_path
@@ -71,7 +71,7 @@ The project uses:
    mkdir src
    cd src
    ```
-* Create the source code for the created ROS package with an arbitrary name (e.g. speech_command.py). Combining the [Publisher-Subscriber in Python tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) with speech_test.py and ROS topic `/jetbot_motors/cmd_str`, which means we simply need to import and init a ros(py) entity to speech_test.py, open a publisher that publishes string commands to `/jetbot_motors/cmd_str`. 
+* Create the source code for the created ROS package with an arbitrary name (e.g. `speech_command.py`). Combining the [Publisher-Subscriber in Python tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) with `speech_test.py` and ROS topic `/jetbot_motors/cmd_str`, which means we simply need to import and init a ros(py) entity to `speech_test.py`, open a publisher that publishes string commands to `/jetbot_motors/cmd_str`. 
    ```sh
    #!/usr/bin/env python
 
@@ -122,7 +122,7 @@ The project uses:
        except rospy.ROSInterruptException:
            pass
    ```
-* Add std_msgs to the dependency && build speech_command.py to CMakeLists.txt
+* Add `std_msgs` to the dependency && build speech_command.py in `CMakeLists.txt`
    ```sh
    cmake_minimum_required(VERSION 3.0.2)
    project(speech_control_1)
@@ -142,3 +142,4 @@ The project uses:
    )
 
    ```
+* Add 
