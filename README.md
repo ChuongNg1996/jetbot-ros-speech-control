@@ -62,3 +62,4 @@ The project uses:
    ```sh
    python speech_test.py
    ```
+* Speak to the microphone and observe the result. Make sure the words used to control the robot is detected easily (e.g. "go","back","left","right"). If not, changing the keywords or better pronunciation are advised. 
