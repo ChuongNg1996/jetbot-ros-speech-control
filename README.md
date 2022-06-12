@@ -150,6 +150,7 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    <?xml version="1.0"?>
    <launch>
       <node pkg="speech_control_1" type="speech_command.py" respawn="false" name="speech_command" output="screen"/>
+      <node pkg="jetbot_ros" type="jetbot_motors.py" name="jetbot_motors"/>
    </launch>
    ```
 * Build the ROS workspace again and run the created ROS launch file. On terminal: 
