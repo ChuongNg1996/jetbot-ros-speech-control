@@ -18,7 +18,7 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    ```sh
    mkdir -p ~/catkin_ws/src
    ```
-* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo (choose the correct path for your ROS) and build it. On terminal: 
+* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo (choose the correct path for your ROS, e.g. mine is ROS Melodic, so `-b melodic` was added) and build it. On terminal: 
    ```sh
    cd ~/catkin_ws/src
    git clone https://github.com/dusty-nv/jetbot_ros -b melodic
