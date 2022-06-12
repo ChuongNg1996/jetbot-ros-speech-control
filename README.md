@@ -163,4 +163,4 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
 * ROS, Python & ROS workspace are on both devices.
 * `jetbot_ros` package is in Jetbot while `speech_control_1` package is in the control station.
 * Two ROS launch files on each, which only open the respective package.
-* Before running the ROS launch files, follow [Network Configuration] (https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#network-configuration) for Turtlebot3 for WIFI connection between both devices.
+* Before running the ROS launch files, follow [Network Configuration](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#network-configuration) for Turtlebot3 for WIFI connection between both devices.
