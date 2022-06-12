@@ -18,4 +18,10 @@ The project is very short and simple. Thus, a reconstruction will be provided in
    ```sh
    mkdir -p ~/catkin_ws/src
    ```
-* 
+* Go to the created ROS workspace, clone the [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) repo and build it.
+   ```sh
+   cd ~/catkin_ws/src
+   git clone https://github.com/dusty-nv/jetbot_ros 
+   cd ..
+   catkin_make
+   ```
