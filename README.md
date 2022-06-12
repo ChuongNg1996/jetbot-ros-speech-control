@@ -58,7 +58,7 @@ The project uses:
    for phrase in speech:
        print(phrase)
    ```
-* Save and test speech_test.py. On terminal: 
+* Save and test `speech_test.py`. On terminal: 
    ```sh
    python speech_test.py
    ```
@@ -122,7 +122,7 @@ The project uses:
        except rospy.ROSInterruptException:
            pass
    ```
-* Add `std_msgs` to the dependency && build speech_command.py in `CMakeLists.txt`
+* Add `std_msgs` to the dependency && build `speech_command.py` in `CMakeLists.txt`
    ```sh
    cmake_minimum_required(VERSION 3.0.2)
    project(speech_control_1)
@@ -142,4 +142,4 @@ The project uses:
    )
 
    ```
-* Add 
+* Add `<depend>std_msgs</depend>` inside `package.xml` 
