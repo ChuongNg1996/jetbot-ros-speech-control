@@ -63,3 +63,8 @@ The project uses:
    python speech_test.py
    ```
 * Speak to the microphone and observe the result. Make sure the words used to control the robot is detected easily (e.g. "go","back","left","right"). If not, changing the keywords or better pronunciation are advised. 
+* Create a new ROS package. On terminal: 
+   ```sh
+   cd ~/catkin_ws/src
+   catkin_create_pkg speech_command
+   ```
