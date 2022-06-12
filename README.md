@@ -71,4 +71,4 @@ The project uses:
    mkdir src
    cd src
    ```
-* Create the source code for the created ROS package with an arbitrary name (e.g. speech_command.py). Combining the [Publisher-Subscriber in Python tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) with speech_test.py and `/jetbot_motors/cmd_str`, which means we simply need to import and init a ros(py) entity to speech_test.py, open a publisher 
+* Create the source code for the created ROS package with an arbitrary name (e.g. speech_command.py). Combining the [Publisher-Subscriber in Python tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) with speech_test.py and ROS topic `/jetbot_motors/cmd_str`, which means we simply need to import and init a ros(py) entity to speech_test.py, open a publisher that publishes string commands to `/jetbot_motors/cmd_str`. 
