@@ -152,4 +152,8 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
       <node pkg="speech_control_1" type="speech_command.py" respawn="false" name="speech_command" output="screen"/>
    </launch>
    ```
-
+* Build the ROS workspace again and run the created ROS launch file
+   ```sh
+   cd ~/catkin_ws
+   catkin_make
+   ```
