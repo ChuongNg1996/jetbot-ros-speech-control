@@ -38,7 +38,7 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    python -m pip install --upgrade pip setuptools wheel
    pip install --upgrade pocketsphinx
    ```
-## Project Reconstruction
+## Project Reconstruction #1 (Microphone is connected to Jetbot)
 * Create a Python file with an arbitrary name (e.g. `speech_test.py`), copy & paste the first example of [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python).
    ```sh
    import os
@@ -158,4 +158,4 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    catkin_make
    roslaunch speech_control_1 speech_command.launch
    ```
-* Command to the microphone and observe the motion of the Jetbot
+* Command to the microphone and observe the motion of the Jetbot.
