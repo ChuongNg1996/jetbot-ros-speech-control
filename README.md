@@ -25,3 +25,8 @@ The project is very short and simple. Thus, a reconstruction will be provided in
    cd ..
    catkin_make
    ```
+* If use microphone, install PyAudio. PortAudio might be needed if there is error.
+   ```sh
+   sudo apt-get install portaudio19-dev 
+   pip install PyAudio
+   ```
