@@ -9,7 +9,7 @@ The project uses:
 * [Jetbot](https://jetbot.org/master/), which is a differential wheeled robot and its ros package [jetbot_ros](https://github.com/dusty-nv/jetbot_ros) for motor control.
 * [Speech Recognition](https://github.com/Uberi/speech_recognition#readme) module with [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python) library for OFFLINE recognition.
 
-For simplicity, it is assumed that the microphone is directly connected to Jetbot wired or wirelessly. The author, however, used a laptop to process the voice command and send ROS command through WIFI to Jetbot.
+For simplicity, it is assumed that the microphone is directly connected to Jetbot wired or wirelessly. The author, however, used a laptop to process the voice command and send ROS command through WIFI to Jetbot, which will be discussed shortly.
 
 ## Installation
 * Install Python.
@@ -38,7 +38,7 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    python -m pip install --upgrade pip setuptools wheel
    pip install --upgrade pocketsphinx
    ```
-## Project Reconstruction #1 (Microphone is connected to Jetbot)
+## Project Reconstruction - Case #1: Microphone is connected to Jetbot
 * Create a Python file with an arbitrary name (e.g. `speech_test.py`), copy & paste the first example of [Pocketsphinx Python](https://github.com/bambocher/pocketsphinx-python).
    ```sh
    import os
@@ -159,3 +159,8 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    roslaunch speech_control_1 speech_command.launch
    ```
 * Command to the microphone and observe the motion of the Jetbot.
+## Project Reconstruction - Case #2: Microphone is connected another Station (e.g. Laptop, Desktop, etc.) and control Jetbot through WIFI
+* ROS, Python & ROS workspace are on both devices.
+* `jetbot_ros` package is in Jetbot while `speech_control_1` package is in the control station.
+* Two ROS launch files on each, which only open the respective package.
+* Before running the ROS launch files, follow [Network Configuration] (https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/#network-configuration) for Turtlebot3 for WIFI connection between both devices.
