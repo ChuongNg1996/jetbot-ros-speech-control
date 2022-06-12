@@ -23,7 +23,7 @@ The project uses:
    cd ..
    catkin_make
    ```
-* If microphone is used, install PyAudio. PortAudio is be needed. On terminal: 
+* If microphone is used, install PyAudio. PortAudio is be needed.
    ```sh
    sudo apt-get install portaudio19-dev 
    pip install PyAudio
