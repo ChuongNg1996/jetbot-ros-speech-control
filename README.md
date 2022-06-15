@@ -157,6 +157,7 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
    ```sh
    cd ~/catkin_ws
    catkin_make
+   source ~/catkin_ws/devel/setup.bash
    roslaunch speech_control_1 speech_command.launch
    ```
 * Command to the microphone and observe the motion of the Jetbot.
