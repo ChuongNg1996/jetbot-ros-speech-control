@@ -14,7 +14,7 @@ For simplicity, it is assumed that the microphone is directly connected to Jetbo
 ## Installation
 * Install Python.
 * [Install ROS](http://wiki.ros.org/melodic/Installation/Ubuntu) (any version).
-* At /usr/home/"name" ("name" is arbitrary), create a ROS workspace. On terminal: 
+* At `/usr/home/"user's name"` (`"user's name"` is arbitrary), create a ROS workspace. On terminal: 
    ```sh
    mkdir -p ~/catkin_ws/src
    ```
